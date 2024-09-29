@@ -1,3 +1,7 @@
+/*Import Onsen UI styles*/
+@import 'onsenui/css/onsenui.css';
+@import 'onsenui/css/onsen-css-components.css';
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

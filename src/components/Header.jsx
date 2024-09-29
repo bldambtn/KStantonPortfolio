@@ -1,4 +1,5 @@
-import React from "react"; //The warning you're seeing about React being defined but never used is a common one in React applications, especially with the introduction of React 17. In React 17 and later, you no longer need to import React in every file that uses JSX, as the JSX transform automatically imports it for you.
+import React from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -6,16 +7,16 @@ function Header() {
       <nav>
         <ul>
           <li>
-            <a href="#about">About Me</a>
+            <Link to="/">About Me</Link>
           </li>
           <li>
-            <a href="#portfolio">Portfolio</a>
+            <Link to="/portfolio">Portfolio</Link>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
           <li>
-            <a href="#resume">Resume</a>
+            <Link to="/resume">Resume</Link>
           </li>
         </ul>
       </nav>

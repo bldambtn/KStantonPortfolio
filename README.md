@@ -63,6 +63,8 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 
 *   Onsen UI. (n.d.). Onsen UI fundamentals. Onsen UI. https://onsen.io/v2/guide/fundamentals.html
 
+*   W3Schools. (n.d.). CSS variables. W3Schools. https://www.w3schools.com/css/css3_variables.asp
+
 ## License
 MIT License
 

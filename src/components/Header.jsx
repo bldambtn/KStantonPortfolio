@@ -1,25 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+// Import Navigation component
+import Navigation from "./Navigation"; 
 
+
+// Define the Header component, which now includes the Navigation component
 function Header() {
   return (
     <header>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">About Me</Link>
-          </li>
-          <li>
-            <Link to="/portfolio">Portfolio</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-          <li>
-            <Link to="/resume">Resume</Link>
-          </li>
-        </ul>
-      </nav>
+      <h1>My Portfolio</h1>
+      {/* Render the Navigation component inside the header */}
+      <Navigation />
     </header>
   );
 }

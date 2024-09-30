@@ -1,4 +1,4 @@
-/*Import Onsen UI styles*/
+/* Import Onsen UI styles */
 @import "onsenui/css/onsenui.css";
 @import "onsenui/css/onsen-css-components.css";
 
@@ -7,13 +7,11 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #e7dbcf;
-  --acColorOne: #123524;
-  --acColorTwo: #ffffff;
-  --fcColorOne: #020402;
-  --fcColorTwo: #362d2e;
+  --whiteColor: #ffffff;
+  --creamColor: #e7dbcf;
+  --greenColor: #123524;
+  --grayColor: #362d2e;
+  --blackColor: #020402;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -21,29 +19,68 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: var(--fcColorOne);
-  text-decoration: inherit;
-}
-a:hover {
-  color: var(--fcColorTwo);
-}
-
-body {
+html, body {
+  height: 100%;
   margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-direction: column; /* Stack children vertically */
+  background-color: var(--whiteColor);
+}
+
+header {
+  background-color: var(--greenColor);
+  color: var(--creamColor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  height: 70px; /* Set a fixed height for the header */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0; /* Ensure the header sticks to the left */
+  z-index: 1000;
+  box-sizing: border-box; /* Include padding in the width calculation */
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 2.2em;
+  margin: 0;
+  white-space: nowrap;
 }
 
-button {
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 15px;
+}
+
+nav ul li a {
+  font-weight: 500;
+  color: var(--creamColor);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  cursor: pointer; /* Ensure the cursor changes to pointer */
+}
+
+nav ul li a:hover {
+  color: var(--whiteColor);
+}
+
+.app {
+  flex: 1; /* This allows the app to take up the remaining space */
+  padding: 1rem;
+  margin-top: 70px; /* Adjust this if your header height changes */
+  box-sizing: border-box; /* Include padding in width calculation */
+  background-color: var(--whiteColor);
+}
+
+/* button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -60,9 +97,22 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+} */
+
+footer {
+  background-color: var(--greenColor);
+  color: var(--creamColor);
+  text-align: center;
+  padding: 1rem;
+  position: absolute;
+  width: 100%;
+  margin-top: auto;
+  bottom: 0;
+  left: 0; /* Ensure footer sticks to the left */
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     color: var(--fcColorOne);
     background-color: #ffffff;
@@ -73,4 +123,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */

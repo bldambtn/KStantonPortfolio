@@ -4,7 +4,6 @@ import { Page } from 'react-onsenui'; // Import Onsen UI Page component
 // Import components
 import Header from "./components/Header";
 import Footer from "./components/Footer"; 
-import Project from "./components/Project";
 // Import pages
 import AboutMe from "./pages/AboutMe";
 import Portfolio from "./pages/Portfolio";

@@ -72,6 +72,12 @@ nav ul li a:hover {
   color: var(--whiteColor);
 }
 
+nav ul li a.active {
+  color: var(--whiteColor); /* Change text color for active link */
+  text-shadow: 0 0 10px var(--creamColor), 0 0 20px var(--whiteColor); /* Glowing effect behind the text */
+  transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
+}
+
 .app {
   flex: 1; /* This allows the app to take up the remaining space */
   padding: 1rem;

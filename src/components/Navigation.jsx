@@ -1,7 +1,7 @@
 // Import React to use JSX
 import React from "react";
-// Import Link for navigation
-import { Link } from "react-router-dom"; 
+// Import NavLink for navigation with active class functionality
+import { NavLink } from "react-router-dom";
 
 // Define the Navigation component, which displays the navigation bar with links
 function Navigation() {
@@ -9,16 +9,24 @@ function Navigation() {
     <nav>
       <ul>
         <li>
-          <Link to="/">About Me</Link>
+          <NavLink to="/" exact activeClassName="active">
+            About Me
+          </NavLink>
         </li>
         <li>
-          <Link to="/portfolio">Portfolio</Link>
+          <NavLink to="/portfolio" activeClassName="active">
+            Portfolio
+          </NavLink>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <NavLink to="/contact" activeClassName="active">
+            Contact
+          </NavLink>
         </li>
         <li>
-          <Link to="/resume">Resume</Link>
+          <NavLink to="/resume" activeClassName="active">
+            Resume
+          </NavLink>
         </li>
       </ul>
     </nav>

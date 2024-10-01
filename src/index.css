@@ -20,11 +20,6 @@
 }
 
 html, body {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column; /* Stack children vertically */
-  background-color: var(--whiteColor);
 }
 
 header {
@@ -79,7 +74,8 @@ nav ul li a.active {
 }
 
 .app {
-  flex: 1; /* This allows the app to take up the remaining space */
+  height: auto;
+  position: relative;
   padding: 1rem;
   margin-top: 70px; /* Adjust this if your header height changes */
   box-sizing: border-box; /* Include padding in width calculation */
@@ -110,7 +106,7 @@ footer {
   color: var(--creamColor);
   text-align: center;
   padding: 1rem;
-  position: absolute;
+  position: fixed;
   width: 100%;
   margin-top: auto;
   bottom: 0;

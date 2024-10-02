@@ -57,6 +57,14 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 
 *   Coolors. (n.d.). Popular color palettes. Coolors. https://coolors.co/palettes/popular
 
+*   Dev.to. (2023, August 16). How to perform form validation in React. https://dev.to/obere4u/how-to-perform-form-validation-in-react-3kgi
+
+*   GeeksforGeeks. (n.d.). How to perform form validation in React. https://www.geeksforgeeks.org/how-to-perform-form-validation-in-react/
+
+*   MDN Web Docs. (n.d.). Form validation. Mozilla. https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation
+
+*   MDN Web Docs. (n.d.). Regular expressions guide. Mozilla. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions
+
 *   MDN Web Docs. (n.d.). Realizing common layouts using grids. Mozilla. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Realizing_common_layouts_using_grids
 
 *   Onsen UI. (n.d.). Getting started with Onsen UI. Onsen UI. https://onsen.io/v2/guide/index.html
@@ -64,8 +72,6 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 *   Onsen UI. (n.d.). Onsen UI for React. Onsen UI. https://onsen.io/v2/guide/react/
 
 *   Onsen UI. (n.d.). Onsen UI fundamentals. Onsen UI. https://onsen.io/v2/guide/fundamentals.html
-
-*   React Documentation. (n.d.). Conditional rendering in React. Meta. https://legacy.reactjs.org/docs/conditional-rendering.html
 
 *   Pexels. (n.d.). Photo by Breakingpic. Post-it scrabble to do todo. https://www.pexels.com/photo/postit-scrabble-to-do-todo-3299/
 
@@ -75,13 +81,23 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 
 *   Pexels. (n.d.). Photo by Pixabay. Close-up photography of yellow, green, red, and brown plastic cones on white-lined surface. https://www.pexels.com/photo/close-up-photography-of-yellow-green-red-and-brown-plastic-cones-on-white-lined-surface-163064/
 
+*   React Documentation. (n.d.). Conditional rendering in React. Meta. https://legacy.reactjs.org/docs/conditional-rendering.html
+
+*   React Documentation. (n.d.). Forms in React. Meta. https://legacy.reactjs.org/docs/forms.html
+
 *   React Documentation. (n.d.). useState: A reference guide. Meta. https://react.dev/reference/react/useState
+
+*   SurveyJS. (n.d.). Client-server data validation. SurveyJS. https://surveyjs.io/stay-updated/blog/client-server-data-validation
 
 *   W3Schools. (n.d.). CSS media queries. W3Schools. https://www.w3schools.com/css/css_rwd_mediaqueries.asp
 
 *   W3Schools. (n.d.). CSS variables. W3Schools. https://www.w3schools.com/css/css3_variables.asp
 
 *   W3Schools. (n.d.). How to create an image overlay. W3Schools. https://www.w3schools.com/howto/howto_css_image_overlay.asp
+
+*   W3Schools. (n.d.). Introduction to accessible forms. W3Schools. https://www.w3schools.com/accessibility/accessibility_forms_intro.php
+
+*   W3Schools. (n.d.). onblur event. W3Schools. https://www.w3schools.com/jsref/event_onblur.asp
 
 ## License
 MIT License

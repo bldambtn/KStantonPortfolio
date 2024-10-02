@@ -38,7 +38,7 @@ header {
   box-sizing: border-box; /* Include padding in the width calculation */
 }
 
-h1 {
+header h1 {
   font-size: 2.2em;
   margin: 0;
   white-space: nowrap;
@@ -179,24 +179,74 @@ nav ul li a.active {
   cursor: pointer;
 }
 
-/* button {
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--whiteColor);
   border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h1 {
+  text-align: center;
+  color: var(--greenColor);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: var(--blackColor);
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--grayColor);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 150px;
+  resize: none;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: -15px;
+  margin-bottom: 15px;
+}
+
+.submit-btn {
+  background-color: var(--greenColor); /* Keep the green background */
+  color: var(--creamColor); /* Cream-colored text */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
   cursor: pointer;
-  transition: border-color 0.25s;
+  width: 100%;
+  box-shadow: none; /* No shadow by default */
+  transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
 }
-button:hover {
-  border-color: var(--fcColorOne);
+
+.submit-btn:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-} */
+
+.submit-btn:active {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Increase shadow depth when clicked */
+  color: var(--whiteColor);
+}
 
 footer {
   background-color: var(--greenColor);
@@ -211,15 +261,3 @@ footer {
   box-sizing: border-box;
 }
 
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: var(--fcColorOne);
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: var(--fcColorTwo);
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */

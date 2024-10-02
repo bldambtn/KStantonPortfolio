@@ -57,13 +57,23 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 
 *   Coolors. (n.d.). Popular color palettes. Coolors. https://coolors.co/palettes/popular
 
+*   MDN Web Docs. (n.d.). Realizing common layouts using grids. Mozilla. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Realizing_common_layouts_using_grids
+
 *   Onsen UI. (n.d.). Getting started with Onsen UI. Onsen UI. https://onsen.io/v2/guide/index.html
 
 *   Onsen UI. (n.d.). Onsen UI for React. Onsen UI. https://onsen.io/v2/guide/react/
 
 *   Onsen UI. (n.d.). Onsen UI fundamentals. Onsen UI. https://onsen.io/v2/guide/fundamentals.html
 
+*   React Documentation. (n.d.). Conditional rendering in React. Meta. https://legacy.reactjs.org/docs/conditional-rendering.html
+
+*   React Documentation. (n.d.). useState: A reference guide. Meta. https://react.dev/reference/react/useState
+
+*   W3Schools. (n.d.). CSS media queries. W3Schools. https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+
 *   W3Schools. (n.d.). CSS variables. W3Schools. https://www.w3schools.com/css/css3_variables.asp
+
+*   W3Schools. (n.d.). How to create an image overlay. W3Schools. https://www.w3schools.com/howto/howto_css_image_overlay.asp
 
 ## License
 MIT License

@@ -248,6 +248,82 @@ textarea {
   color: var(--whiteColor);
 }
 
+/* Styling for the resume section */
+.resume-section {
+  padding: 20px;
+  text-align: left; /* Align content to the left */
+}
+
+/* Styling for the resume download link (matches the submit button) */
+.resume-download-link {
+  background-color: var(--greenColor); /* Same green background */
+  color: var(--creamColor); /* Same cream-colored text */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none; /* Remove underline */
+  font-weight: bold;
+  text-align: center;
+  box-shadow: none; /* No shadow by default */
+  transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
+}
+
+.resume-download-link:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+}
+
+.resume-download-link:active {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Increase shadow depth when clicked */
+  color: var(--whiteColor);
+}
+
+/* Create a 3-column layout for the proficiency sections */
+.proficiency-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 20px; /* Add some space between columns */
+}
+
+.proficiency-columns h2 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.proficiency-columns ul {
+  list-style-type: disc; /* Add bullet points */
+  padding-left: 20px; /* Indent list for bullet points */
+  margin: 0;
+}
+
+.proficiency-columns ul li {
+  margin-bottom: 8px; /* Space between list items */
+  text-align: left; /* Ensure left alignment */
+}
+
+/* Create a 3-column layout for the proficiency sections */
+.proficiency-columns {
+  display: grid;
+  grid-template-columns: 1fr; /* Default for small screens (stacked) */
+  gap: 20px; /* Add some space between columns */
+}
+
+/* Medium screens and above (2x3 grid) */
+@media (min-width: 768px) {
+  .proficiency-columns {
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  }
+}
+
+/* Large screens (optional, keep 3 columns) */
+@media (min-width: 1024px) {
+  .proficiency-columns {
+    grid-template-columns: repeat(3, 1fr); /* Maintain 3 columns */
+  }
+}
+
 footer {
   background-color: var(--greenColor);
   color: var(--creamColor);

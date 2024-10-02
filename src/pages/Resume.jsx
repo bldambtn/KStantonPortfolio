@@ -4,25 +4,54 @@ import React from "react";
 // Define the Resume component, which displays a downloadable resume link and a list of proficiencies
 function Resume() {
   return (
-    <div>
-      {/* Heading for the Resume section */}
-      <h1>Resume</h1>
-
+    <div className="resume-section">
       {/* Downloadable resume link */}
-      <a href="/path-to-your-resume.pdf" download>
-        Download my Resume
+      <a href="/kstantonresume.pdf" download className="resume-download-link">
+        Download my Resume (PDF)
       </a>
 
-      {/* Heading for the Proficiencies list */}
-      <h2>Proficiencies:</h2>
+      {/* Container for the proficiencies in three columns */}
+      <div className="proficiency-columns">
+        {/* Front-end Proficiencies */}
+        <div>
+          <h2>Front-end Proficiencies:</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>JQuery</li>
+            <li>Responsive design</li>
+            <li>React</li>
+            <li>Bootstrap</li>
+          </ul>
+        </div>
 
-      {/* List of proficiencies */}
-      <ul>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Node.js</li>
-        <li>CSS</li>
-      </ul>
+        {/* Back-end Proficiencies */}
+        <div>
+          <h2>Back-end Proficiencies:</h2>
+          <ul>
+            <li>APIs</li>
+            <li>Insomnia, Postman</li>
+            <li>Node</li>
+            <li>Express</li>
+            <li>MySQL, Sequelize</li>
+            <li>PostgreSQL</li>
+          </ul>
+        </div>
+
+        {/* Additional Proficiencies */}
+        <div>
+          <h2>Additional Proficiencies:</h2>
+          <ul>
+            <li>Manual Testing</li>
+            <li>Test Planning</li>
+            <li>Jira</li>
+            <li>Xray</li>
+            <li>Agile Methodologies</li>
+            <li>Research</li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }

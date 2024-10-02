@@ -67,6 +67,14 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 
 *   React Documentation. (n.d.). Conditional rendering in React. Meta. https://legacy.reactjs.org/docs/conditional-rendering.html
 
+*   Pexels. (n.d.). Photo by Breakingpic. Post-it scrabble to do todo. https://www.pexels.com/photo/postit-scrabble-to-do-todo-3299/
+
+*   Pexels. (n.d.). Photo by Edmond Dantès. Man in black suit jacket sitting beside woman in brown long sleeve shirt. https://www.pexels.com/photo/man-in-black-suit-jacket-sitting-beside-woman-in-brown-long-sleeve-shirt-4344860/
+
+*   Pexels. (n.d.). Photo by Nataliya Vaitkevich. A miniature shopping cart on MacBook laptop. https://www.pexels.com/photo/a-miniature-shopping-cart-on-macbook-laptop-6214476/
+
+*   Pexels. (n.d.). Photo by Pixabay. Close-up photography of yellow, green, red, and brown plastic cones on white-lined surface. https://www.pexels.com/photo/close-up-photography-of-yellow-green-red-and-brown-plastic-cones-on-white-lined-surface-163064/
+
 *   React Documentation. (n.d.). useState: A reference guide. Meta. https://react.dev/reference/react/useState
 
 *   W3Schools. (n.d.). CSS media queries. W3Schools. https://www.w3schools.com/css/css_rwd_mediaqueries.asp

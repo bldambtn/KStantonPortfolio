@@ -4,7 +4,7 @@ import React from "react";
 // Define the AboutMe component, which displays personal information
 function AboutMe() {
   return (
-    <div>
+    <div className="aboutme">
       {/* Heading for the About Me section */}
       <h1>About Me</h1>
 

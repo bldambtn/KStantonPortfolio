@@ -19,9 +19,29 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Global resets */
 html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
+/* Main container layout to ensure footer stays at the bottom */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the container takes the full viewport height */
+}
+
+/* App content area */
+.app {
+  flex: 1; /* Allows the main content to take up the remaining space */
+  padding: 0;
+  background-color: var(--whiteColor);
+  box-sizing: border-box;
+}
+
+/* Header styling */
 header {
   background-color: var(--greenColor);
   color: var(--creamColor);
@@ -29,38 +49,42 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 2rem;
-  height: 70px; /* Set a fixed height for the header */
-  position: fixed;
+  height: auto; /* Allow header height to adjust dynamically */
   width: 100%;
   top: 0;
-  left: 0; /* Ensure the header sticks to the left */
-  z-index: 1000;
-  box-sizing: border-box; /* Include padding in the width calculation */
+  left: 0;
+  box-sizing: border-box;
+  flex-wrap: wrap; /* Allow wrapping of elements */
 }
 
+/* Header text styling for larger screens */
 header h1 {
   font-size: 2.2em;
   margin: 0;
   white-space: nowrap;
 }
 
+/* Navigation list styling */
 nav ul {
   display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  gap: 15px; /* Space between the nav items */
 }
 
+/* Individual nav item styling */
 nav ul li {
   margin-left: 15px;
 }
 
+/* Navigation link styling */
 nav ul li a {
   font-weight: 500;
   color: var(--creamColor);
   text-decoration: none;
   transition: color 0.3s ease;
-  cursor: pointer; /* Ensure the cursor changes to pointer */
+  cursor: pointer;
 }
 
 nav ul li a:hover {
@@ -68,280 +92,128 @@ nav ul li a:hover {
 }
 
 nav ul li a.active {
-  color: var(--whiteColor); /* Change text color for active link */
-  text-shadow: 0 0 10px var(--creamColor), 0 0 20px var(--whiteColor); /* Glowing effect behind the text */
-  transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition */
-}
-
-.app {
-  height: auto;
-  position: relative;
-  padding: 1rem;
-  margin-top: 70px; /* Adjust this if your header height changes */
-  box-sizing: border-box; /* Include padding in width calculation */
-  background-color: var(--whiteColor);
-}
-
-/* Portfolio Grid */
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr); /* Default for phones (1x6 grid) */
-  grid-gap: 20px; /* Gap between grid items */
-  padding: 20px; /* Padding around the grid */
-}
-
-/* Medium screens (2x3 grid) */
-@media (min-width: 768px) {
-  .portfolio-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  }
-}
-
-/* Large screens (3x2 grid) */
-@media (min-width: 1024px) {
-  .portfolio-grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  }
-}
-
-/* Project styling remains the same */
-.project {
-  position: relative; /* Enable positioning for overlay */
-  width: 100%; /* Ensure full width */
-  overflow: hidden; /* Hide overflow */
-}
-
-.project img {
-  width: 100%;
-  height: 300px; /* Set a fixed height to maintain uniformity */
-  object-fit: cover; /* Ensure all images are the same size */
-  transition: transform 0.3s ease-in-out; /* Smooth zoom effect on hover */
-}
-
-.project:hover img {
-  transform: scale(1.05); /* Slight zoom effect on hover */
-}
-
-/* Overlay with semi-transparent white background */
-.project-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-opaque white */
-  color: var(--greenColor);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-  opacity: 0; /* Initially hidden */
-  transition: opacity 0.3s ease-in-out;
-  pointer-events: none; /* Ignore pointer events when not visible */
-}
-
-.project:hover .project-overlay {
-  opacity: 1; /* Show overlay on hover */
-  pointer-events: auto; /* Enable pointer events when visible */
-}
-
-.project-title {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-.project-links a {
-  display: block;
-  margin-top: 10px;
-  color: var(--blackColor);
-  text-decoration: none;
-  font-size: 1.1em;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.project-links a:hover {
-  color: var(--grayColor);
-}
-
-.project-links p {
-  color: var(--grayColor); /* Use your custom color */
-  font-style: italic;
-  font-size: 1em;
-  margin-top: 10px;
-}
-
-.project-github-icon {
-  font-size: 2em;
-  color: var(--greenColor);
-  margin-bottom: 10px;
-  cursor: pointer;
-}
-
-.contact-form {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: var(--whiteColor);
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form h1 {
-  text-align: center;
-  color: var(--greenColor);
-}
-
-.form-group {
-  margin-bottom: 20px;
-}
-
-label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 5px;
-  color: var(--blackColor);
-}
-
-input,
-textarea {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid var(--grayColor);
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-textarea {
-  height: 150px;
-  resize: none;
-}
-
-.error-message {
-  color: red;
-  font-size: 14px;
-  margin-top: -15px;
-  margin-bottom: 15px;
-}
-
-.submit-btn {
-  background-color: var(--greenColor); /* Keep the green background */
-  color: var(--creamColor); /* Cream-colored text */
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-  width: 100%;
-  box-shadow: none; /* No shadow by default */
-  transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
-}
-
-.submit-btn:hover {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
-}
-
-.submit-btn:active {
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Increase shadow depth when clicked */
   color: var(--whiteColor);
+  text-shadow: 0 0 10px var(--creamColor), 0 0 20px var(--whiteColor);
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
-/* Styling for the resume section */
-.resume-section {
-  padding: 20px;
-  text-align: left; /* Align content to the left */
-}
+/* Responsive changes when the page reaches a width of 555px */
+@media (max-width: 555px) {
+  /* Make the header content centered and stack vertically */
+  header {
+    flex-direction: column;
+    align-items: center; /* Center align the content */
+    justify-content: center;
+    text-align: center;
+    padding: 1rem; /* Add more padding */
+  }
 
-/* Styling for the resume download link (matches the submit button) */
-.resume-download-link {
-  background-color: var(--greenColor); /* Same green background */
-  color: var(--creamColor); /* Same cream-colored text */
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-  display: inline-block;
-  text-decoration: none; /* Remove underline */
-  font-weight: bold;
-  text-align: center;
-  box-shadow: none; /* No shadow by default */
-  transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
-}
+  /* Ensure that the navigation aligns under the header and is centered */
+  nav ul {
+    width: 100%;
+    flex-direction: column; /* Stack the items vertically */
+    justify-content: center;
+    align-items: center; /* Center align the items */
+    gap: 10px; /* Adjust gap between items */
+    padding: 0;
+    margin: 1rem 0 0 0; /* Add margin on top to create space between header and nav */
+  }
 
-.resume-download-link:hover {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
-}
+  nav ul li {
+    margin-left: 0; /* Remove the margin between items */
+  }
 
-.resume-download-link:active {
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Increase shadow depth when clicked */
-  color: var(--whiteColor);
-}
-
-/* Create a 3-column layout for the proficiency sections */
-.proficiency-columns {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-  gap: 20px; /* Add some space between columns */
-}
-
-.proficiency-columns h2 {
-  font-size: 1.4em;
-  margin-bottom: 10px;
-}
-
-.proficiency-columns ul {
-  list-style-type: disc; /* Add bullet points */
-  padding-left: 20px; /* Indent list for bullet points */
-  margin: 0;
-}
-
-.proficiency-columns ul li {
-  margin-bottom: 8px; /* Space between list items */
-  text-align: left; /* Ensure left alignment */
-}
-
-/* Create a 3-column layout for the proficiency sections */
-.proficiency-columns {
-  display: grid;
-  grid-template-columns: 1fr; /* Default for small screens (stacked) */
-  gap: 20px; /* Add some space between columns */
-}
-
-/* Medium screens and above (2x3 grid) */
-@media (min-width: 768px) {
-  .proficiency-columns {
-    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  nav ul li a {
+    padding: 0.5rem 0; /* Add some padding around each link for touch targets */
   }
 }
 
-/* Large screens (optional, keep 3 columns) */
-@media (min-width: 1024px) {
-  .proficiency-columns {
-    grid-template-columns: repeat(3, 1fr); /* Maintain 3 columns */
+/* For phone sizes and smaller (480px or less) */
+@media (max-width: 480px) {
+  /* Navigation stays stacked vertically, but ensure proper padding for touch targets */
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li a {
+    padding: 0.5rem 0;
+    font-size: 1rem; /* Adjust font size for better readability on small screens */
   }
 }
 
+/* Footer styling */
 footer {
   background-color: var(--greenColor);
   color: var(--creamColor);
   text-align: center;
-  padding: 1rem;
-  position: fixed;
+  padding: .5rem 0;
   width: 100%;
-  bottom: 0;
-  left: 0; /* Ensure footer sticks to the left */
   box-sizing: border-box;
+  font-size: clamp(12px, 2vw, 16px); /* Responsive font size */
+  position: static; /* Ensure the footer is in the document flow and not fixed */
+  margin-top: auto; /* Push footer to the bottom when content is smaller */
 }
 
-footer a {
-  text-decoration: none;
+/* Footer content styling */
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-footer a:hover {
-  color: var(--whiteColor); /* Optional hover color */
+/* Links styling */
+footer div a {
+  margin-right: 15px;
+  color: var(--creamColor);
+  transition: color 0.3s ease;
+  font-size: clamp(14px, 2.5vw, 18px); /* Responsive link size */
 }
 
+footer div a:hover {
+  color: var(--whiteColor);
+}
 
+footer div a .icon {
+  font-size: clamp(20px, 3vw, 30px); /* Responsive icon size */
+}
+
+/* Stacks content vertically on small screens */
+@media (max-width: 480px) {
+  footer div {
+    flex-direction: column;
+  }
+
+  footer div a {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* Responsive Typography */
+h1, h2, p, ul, li {
+  font-size: clamp(16px, 2.5vw, 24px);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: calc(20px + 1vw);
+  }
+}
+
+@media (max-width: 480px) {
+  h1, h2 {
+    font-size: calc(18px + 1vw);
+  }
+}
+
+@media (max-width: 480px) {
+  .app {
+    padding: 10px;
+  }
+
+  h1, h2, p {
+    font-size: 1.2em;
+  }
+}

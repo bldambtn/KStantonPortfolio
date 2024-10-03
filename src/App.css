@@ -1,42 +1,255 @@
-/* #root {
-  max-width: 1280px;
+/*About Me*/
+.aboutme {
+  padding: 0 1rem;
+}
+
+/* Center the title and headshot at 555px or smaller */
+@media (max-width: 555px) {
+  .aboutme h1 {
+    text-align: center;
+  }
+
+  .aboutme img {
+    display: block;
+    margin: 0 auto; /* Center the headshot */
+  }
+}
+
+/*Portfolio*/
+.portfolio {
+  padding: 0 1rem;
+}
+
+/* Center the title and headshot at 555px or smaller */
+@media (max-width: 555px) {
+  .portfolio h1 {
+    text-align: center;
+  }
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Default for phones (1x6 grid) */
+  gap: 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on larger screens */
+  }
+}
+
+/* Project Image Styling */
+.project img {
+  width: 100%;
+  height: 260px; /* Ensures uniformity for all images */
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Project styling remains the same */
+.project {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.project:hover img {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Overlay */
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  text-align: center; /* Center the text for the project title and links */
+}
+
+/* Show overlay on hover */
+.project:hover .project-overlay {
+  opacity: 1;
+}
+
+/* Title styling */
+.project-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/* GitHub icon styling */
+.project-github-icon {
+  font-size: 2em;
+  color: var(--greenColor);
+  margin-bottom: 10px; /* Add space below the GitHub icon */
+  cursor: pointer;
+}
+
+/* Deployed link or backend message */
+.project-links a,
+.project-links p {
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-top: 10px;
+  color: var(--blackColor);
+}
+
+.project-links a:hover {
+  color: var(--grayColor);
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 600px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 20px;
+  background-color: var(--whiteColor);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h1 {
   text-align: center;
-} */
-
-/* .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+  color: var(--greenColor);
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-} */
 
-/* @keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: var(--blackColor);
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--grayColor);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 150px;
+  resize: none;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: -15px;
+  margin-bottom: 15px;
+}
+
+.submit-btn {
+  background-color: var(--greenColor);
+  color: var(--creamColor);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: box-shadow 0.3s ease;
+}
+
+.submit-btn:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn:active {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+  color: var(--whiteColor);
+}
+
+/* Resume Section */
+.resume-section {
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+.resume-download-link {
+  background-color: var(--greenColor);
+  color: var(--creamColor);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume-download-link:hover {
+  background-color: var(--blackColor);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.resume-download-link:active {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+  color: var(--whiteColor);
+}
+
+/* Proficiency Columns */
+.proficiency-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+  width: 100%; 
+}
+
+.proficiency-columns h2 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.proficiency-columns ul {
+  list-style-type: disc; 
+  padding-left: 20px; 
+  margin: 0;
+}
+
+.proficiency-columns ul li {
+  margin-bottom: 8px;
+  text-align: left; 
+}
+
+@media (max-width: 555px) {
+  .proficiency-columns {
+    grid-template-columns: 1fr;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  .resume-download-link {
+    margin: 0 auto; /* Center the resume download button */
+  } 
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */

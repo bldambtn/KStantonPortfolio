@@ -9,7 +9,7 @@ function Footer() {
       {/* Social media icons with links */}
       <div style={{ marginTop: "10px", textAlign: "center" }}>
         <a
-          href="https://www.linkedin.com/in/your-linkedin-profile"
+          href="https://www.linkedin.com/in/krystalstanton/"
           target="_blank"
           rel="noopener noreferrer"
           style={{ marginRight: "15px" }}
@@ -21,7 +21,7 @@ function Footer() {
           />
         </a>
         <a
-          href="https://github.com/your-github-profile"
+          href="https://github.com/bldambtn"
           target="_blank"
           rel="noopener noreferrer"
           style={{ marginRight: "15px" }}
@@ -33,12 +33,12 @@ function Footer() {
           />
         </a>
         <a
-          href="https://fullstack.com/your-fullstack-profile" // Replace with your actual FullStack link
+          href="https://www.instagram.com/burrowmenag/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <Icon
-            icon="fa-code"
+            icon="fa-instagram"
             size={30}
             style={{ color: "var(--creamColor)" }}
           />

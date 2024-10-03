@@ -16,18 +16,21 @@ function App() {
   return (
     <Router>
       <Page>
-        <div className="app">
-          {/* Render the Header which now includes the Navigation */}
+        <div className="app-container">
+          {" "}
+          {/* Ensure app-container wraps everything */}
+          {/* Render the Header */}
           <Header />
-
-          {/* Routes for different pages */}
-          <Routes>
-            <Route path="/" element={<AboutMe />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/resume" element={<Resume />} />
-          </Routes>
-
+          {/* Main content area */}
+          <div className="app">
+            {/* Routes for different pages */}
+            <Routes>
+              <Route path="/" element={<AboutMe />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/resume" element={<Resume />} />
+            </Routes>
+          </div>
           {/* Render the Footer */}
           <Footer />
         </div>

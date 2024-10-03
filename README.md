@@ -51,6 +51,12 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 ```
 ## Walkthrough
 
+*   Deployed application: https://kstantonportfolio.netlify.app/
+
+*   Application repository: https://github.com/bldambtn/KStantonPortfolio
+
+![Video walkthrough of deployed app](./src/assets/walkthrough.gif)
+
 ## Citations
 
 *   BrowserStack. (n.d.). How to implement mobile-first design. BrowserStack. https://www.browserstack.com/guide/how-to-implement-mobile-first-design
@@ -60,6 +66,8 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 *   Dev.to. (2023, August 16). How to perform form validation in React. https://dev.to/obere4u/how-to-perform-form-validation-in-react-3kgi
 
 *   GeeksforGeeks. (n.d.). How to perform form validation in React. https://www.geeksforgeeks.org/how-to-perform-form-validation-in-react/
+
+*   Git Bootcamp Content. (n.d.). Git deploy activity. University of Texas at Austin. https://git.bootcampcontent.com/University-of-Texas-at-Austin/UTA-VIRT-FSF-PT-05-2024-U-LOLC/-/tree/main/20-React/01-Activities/27-Evr_Git-Deploy?ref_type=heads
 
 *   MDN Web Docs. (n.d.). Form validation. Mozilla. https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation
 

@@ -6,7 +6,7 @@ import Project from "../components/Project";
 // Define the Portfolio component, which renders multiple Project components
 function Portfolio() {
   return (
-    <div>
+    <div className="portfolio">
       <h1>My Work</h1>
 
       {/* Portfolio grid */}

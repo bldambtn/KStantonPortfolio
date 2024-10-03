@@ -15,9 +15,9 @@ function Project({ title, image, deployedLink, githubLink }) {
   return (
     <div
       className="project"
-      onMouseEnter={() => setOverlayVisible(true)} // Show overlay on hover (desktop)
-      onMouseLeave={() => setOverlayVisible(false)} // Hide overlay on hover out (desktop)
-      onClick={toggleOverlay} // Toggle overlay on click (mobile)
+      onMouseEnter={() => setOverlayVisible(true)} 
+      onMouseLeave={() => setOverlayVisible(false)}
+      onClick={toggleOverlay} 
     >
       {/* Project Image */}
       <img src={image} alt={title} />

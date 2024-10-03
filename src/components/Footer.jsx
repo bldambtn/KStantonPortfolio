@@ -1,6 +1,7 @@
 // Import React to use JSX
 import React from "react";
-import { Icon } from "react-onsenui"; // Import Onsen UI icons
+// Import Onsen UI icons
+import { Icon } from "react-onsenui"; 
 
 // Define the Footer component, which displays the footer with social links
 function Footer() {

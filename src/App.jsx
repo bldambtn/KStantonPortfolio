@@ -1,16 +1,18 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Import React Router components for routing
-import { Page } from 'react-onsenui'; // Import Onsen UI Page component
+// Import React Router components for routing
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// Import Onsen UI Page component
+import { Page } from "react-onsenui"; 
 
 // Import components
 import Header from "./components/Header";
-import Footer from "./components/Footer"; 
+import Footer from "./components/Footer";
 // Import pages
 import AboutMe from "./pages/AboutMe";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 // Import global styles
-import "./App.css"; 
+import "./App.css";
 
 function App() {
   return (

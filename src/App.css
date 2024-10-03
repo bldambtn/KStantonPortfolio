@@ -3,7 +3,7 @@
   padding: 0 1rem;
 }
 
-/* Center the title and headshot at 555px or smaller */
+/*Make About Me responsive*/
 @media (max-width: 555px) {
   .aboutme h1 {
     text-align: center;
@@ -11,7 +11,7 @@
 
   .aboutme img {
     display: block;
-    margin: 0 auto; /* Center the headshot */
+    margin: 0 auto; 
   }
 }
 
@@ -20,7 +20,7 @@
   padding: 0 1rem;
 }
 
-/* Center the title and headshot at 555px or smaller */
+/*Make Portfolio Responsive*/
 @media (max-width: 555px) {
   .portfolio h1 {
     text-align: center;
@@ -30,7 +30,7 @@
 /* Portfolio Grid */
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(1, 1fr); /* Default for phones (1x6 grid) */
+  grid-template-columns: repeat(1, 1fr);
   gap: 20px;
   padding: 20px;
   margin-top: 20px;
@@ -38,20 +38,20 @@
 
 @media (min-width: 768px) {
   .portfolio-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 1024px) {
   .portfolio-grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns on larger screens */
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 /* Project Image Styling */
 .project img {
   width: 100%;
-  height: 260px; /* Ensures uniformity for all images */
+  height: 260px;
   object-fit: cover;
   transition: transform 0.3s ease-in-out;
 }
@@ -64,7 +64,7 @@
 }
 
 .project:hover img {
-  transform: scale(1.05); /* Slight zoom effect on hover */
+  transform: scale(1.05);
 }
 
 /* Overlay */
@@ -76,12 +76,12 @@
   height: 100%;
   background-color: rgba(255, 255, 255, 0.8);
   display: flex;
-  flex-direction: column; /* Stack elements vertically */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
-  text-align: center; /* Center the text for the project title and links */
+  text-align: center;
 }
 
 /* Show overlay on hover */
@@ -99,7 +99,7 @@
 .project-github-icon {
   font-size: 2em;
   color: var(--greenColor);
-  margin-bottom: 10px; /* Add space below the GitHub icon */
+  margin-bottom: 10px;
   cursor: pointer;
 }
 
@@ -245,11 +245,12 @@ textarea {
   text-align: left; 
 }
 
+/*Make Resume View Responsive*/
 @media (max-width: 555px) {
   .proficiency-columns {
     grid-template-columns: 1fr;
   }
   .resume-download-link {
-    margin: 0 auto; /* Center the resume download button */
+    margin: 0 auto; 
   } 
 }

@@ -30,12 +30,12 @@ html, body {
 .app-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Ensure the container takes the full viewport height */
+  min-height: 100vh;
 }
 
 /* App content area */
 .app {
-  flex: 1; /* Allows the main content to take up the remaining space */
+  flex: 1;
   padding: 0;
   background-color: var(--whiteColor);
   box-sizing: border-box;
@@ -49,12 +49,12 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 2rem;
-  height: auto; /* Allow header height to adjust dynamically */
+  height: auto;
   width: 100%;
   top: 0;
   left: 0;
   box-sizing: border-box;
-  flex-wrap: wrap; /* Allow wrapping of elements */
+  flex-wrap: wrap; 
 }
 
 /* Header text styling for larger screens */
@@ -70,7 +70,7 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  gap: 15px; /* Space between the nav items */
+  gap: 15px;
 }
 
 /* Individual nav item styling */
@@ -102,35 +102,34 @@ nav ul li a.active {
   /* Make the header content centered and stack vertically */
   header {
     flex-direction: column;
-    align-items: center; /* Center align the content */
+    align-items: center; 
     justify-content: center;
     text-align: center;
-    padding: 1rem; /* Add more padding */
+    padding: 1rem; 
   }
 
   /* Ensure that the navigation aligns under the header and is centered */
   nav ul {
     width: 100%;
-    flex-direction: column; /* Stack the items vertically */
+    flex-direction: column; 
     justify-content: center;
-    align-items: center; /* Center align the items */
-    gap: 10px; /* Adjust gap between items */
+    align-items: center;
+    gap: 10px;
     padding: 0;
-    margin: 1rem 0 0 0; /* Add margin on top to create space between header and nav */
+    margin: 1rem 0 0 0; 
   }
 
   nav ul li {
-    margin-left: 0; /* Remove the margin between items */
+    margin-left: 0; 
   }
 
   nav ul li a {
-    padding: 0.5rem 0; /* Add some padding around each link for touch targets */
+    padding: 0.5rem 0; 
   }
 }
 
 /* For phone sizes and smaller (480px or less) */
 @media (max-width: 480px) {
-  /* Navigation stays stacked vertically, but ensure proper padding for touch targets */
   nav ul {
     flex-direction: column;
     align-items: center;
@@ -138,7 +137,7 @@ nav ul li a.active {
 
   nav ul li a {
     padding: 0.5rem 0;
-    font-size: 1rem; /* Adjust font size for better readability on small screens */
+    font-size: 1rem;
   }
 }
 
@@ -150,9 +149,9 @@ footer {
   padding: .5rem 0;
   width: 100%;
   box-sizing: border-box;
-  font-size: clamp(12px, 2vw, 16px); /* Responsive font size */
-  position: static; /* Ensure the footer is in the document flow and not fixed */
-  margin-top: auto; /* Push footer to the bottom when content is smaller */
+  font-size: clamp(12px, 2vw, 16px);
+  position: static;
+  margin-top: auto;
 }
 
 /* Footer content styling */
@@ -168,7 +167,7 @@ footer div a {
   margin-right: 15px;
   color: var(--creamColor);
   transition: color 0.3s ease;
-  font-size: clamp(14px, 2.5vw, 18px); /* Responsive link size */
+  font-size: clamp(14px, 2.5vw, 18px); 
 }
 
 footer div a:hover {
@@ -176,7 +175,7 @@ footer div a:hover {
 }
 
 footer div a .icon {
-  font-size: clamp(20px, 3vw, 30px); /* Responsive icon size */
+  font-size: clamp(20px, 3vw, 30px); 
 }
 
 /* Stacks content vertically on small screens */

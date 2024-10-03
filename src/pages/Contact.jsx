@@ -1,4 +1,5 @@
-import React, { useState } from "react"; // Import useState for form management
+// Import useState for form management
+import React, { useState } from "react";
 
 function Contact() {
   // State to track form data

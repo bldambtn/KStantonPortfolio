@@ -10,7 +10,7 @@ function AboutMe() {
 
       {/* Add a headshot or avatar below the header */}
       <img
-        src="../src/assets/me.jpg"
+        src="/me.jpg"
         alt="Headshot"
         style={{
           width: "150px",
